@@ -191,3 +191,53 @@ Clear business interpretation:
 
 ```bash
 streamlit run app.py
+
+---
+
+## 🔗 Live Demo
+
+👉 https://explainable-customer-churn-risk-dashboard-h8unhhkjcvpyjoib73me.streamlit.app/
+
+---
+
+## 🎯 What makes this project strong
+
+This is not just a model.
+
+It is a complete decision-support system:
+
+- ✔ Prediction  
+- ✔ Explanation  
+- ✔ Business action  
+
+---
+
+## 👨‍💻 Author
+
+M. Yeswanth Reddy
+
+---
+
+## 🔥 Final Note
+
+This project shows:
+
+- End-to-end ML understanding  
+- Explainable AI usage  
+- Real business thinking  
+
+👉 This project demonstrates how machine learning can move beyond prediction and support real business decisions through explainable insights.
+
+---
+
+## 📌 Conclusion
+
+This project highlights how machine learning can be used not only to predict outcomes but also to support real-world decision-making.
+
+By combining:
+
+- Prediction  
+- Explainability  
+- Business logic  
+
+👉 it provides a practical solution for reducing customer churn.
