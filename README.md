@@ -2,6 +2,8 @@
 
 A complete end-to-end machine learning system to **predict customer churn risk and explain the reasons behind it**, helping businesses take proactive retention actions.
 
+🔗 **Live Demo:** https://explainable-customer-churn-risk-dashboard-h8unhhkjcvpyjoib73me.streamlit.app/
+
 ---
 
 ## 🚀 Problem Statement
