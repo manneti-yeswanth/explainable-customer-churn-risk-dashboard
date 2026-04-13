@@ -8,22 +8,22 @@ A complete end-to-end machine learning system to **predict customer churn risk a
 
 Customer churn is one of the biggest challenges for subscription-based businesses.
 
-Most systems only predict churn —  
+Most systems only predict churn —
 👉 but don’t explain *why it happens*
 
 This project solves both:
 
-✔ Predict churn risk  
-✔ Explain key drivers  
-✔ Suggest business actions  
+* ✔ Predict churn risk
+* ✔ Explain key drivers
+* ✔ Suggest business actions
 
 ---
 
 ## 🎯 Project Objective
 
-- Identify customers likely to churn  
-- Provide interpretable insights using SHAP  
-- Enable data-driven retention strategies  
+* Identify customers likely to churn
+* Provide interpretable insights using SHAP
+* Enable data-driven retention strategies
 
 ---
 
@@ -31,10 +31,10 @@ This project solves both:
 
 This project combines:
 
-- **XGBoost Model** → High-performance prediction  
-- **Feature Engineering** → Behavior-based insights  
-- **SHAP Explainability** → Transparent predictions  
-- **Streamlit Dashboard** → Interactive UI  
+* **XGBoost Model** → High-performance prediction
+* **Feature Engineering** → Behavior-based insights
+* **SHAP Explainability** → Transparent predictions
+* **Streamlit Dashboard** → Interactive UI
 
 ---
 
@@ -42,30 +42,30 @@ This project combines:
 
 ### 🔹 Data Processing
 
-- Handled missing values  
-- Encoded categorical variables  
-- Feature alignment using saved columns  
+* Handled missing values
+* Encoded categorical variables
+* Feature alignment using saved columns
 
 ### 🔹 Feature Engineering
 
-- **ChargeRatio = MonthlyCharges / TotalCharges**  
-- **ActivityScore = tenure × MonthlyCharges**  
+* **ChargeRatio = MonthlyCharges / TotalCharges**
+* **ActivityScore = tenure × MonthlyCharges**
 
 These features capture:
 
-- Customer engagement  
-- Spending behavior  
+* Customer engagement
+* Spending behavior
 
 ---
 
 ## 📊 Model Performance
 
-| Metric            | Value            |
-|------------------|------------------|
-| Model            | XGBoost          |
-| ROC-AUC Score    | **0.82**         |
-| Accuracy         | Strong           |
-| Interpretability | High (via SHAP)  |
+| Metric           | Value           |
+| ---------------- | --------------- |
+| Model            | XGBoost         |
+| ROC-AUC Score    | **0.82**        |
+| Accuracy         | Strong          |
+| Interpretability | High (via SHAP) |
 
 ---
 
@@ -76,10 +76,11 @@ These features capture:
 ![Input UI](./input_ui.png)
 
 Users provide:
-- Tenure  
-- Charges  
-- Contract type  
-- Services  
+
+* Tenure
+* Charges
+* Contract type
+* Services
 
 ---
 
@@ -89,21 +90,19 @@ Users provide:
 
 Example:
 
-- Risk Level: **High**  
-- Probability: **0.70**  
-- Risk Score: **70.3%**
+* Risk Level: **High**
+* Probability: **0.70**
+* Risk Score: **70.3%**
 
-👉 Indicates strong likelihood of churn  
+👉 Indicates strong likelihood of churn
 
 ---
 
 ### 🔹 3. Business Decision Layer
 
-- High → Immediate retention needed  
-- Medium → Proactive engagement  
-- Low → Stable customer  
-
-This converts model output into **business action**
+* High → Immediate retention needed
+* Medium → Proactive engagement
+* Low → Stable customer
 
 ---
 
@@ -113,9 +112,9 @@ This converts model output into **business action**
 
 Top drivers:
 
-- Tenure (new customers at risk)  
-- Payment method  
-- Internet service type  
+* Tenure (new customers at risk)
+* Payment method
+* Internet service type
 
 ---
 
@@ -125,16 +124,8 @@ Top drivers:
 
 SHAP shows:
 
-- Which features increase churn  
-- Which features reduce churn  
-
-Example insights:
-
-- ActivityScore → strongly increases risk  
-- ChargeRatio → increases risk  
-- MonthlyCharges → moderate effect  
-
-👉 This removes black-box behavior  
+* Which features increase churn
+* Which features reduce churn
 
 ---
 
@@ -142,48 +133,49 @@ Example insights:
 
 ![Key Drivers](./key_drivers.png)
 
-Clear business interpretation:
-
-- ActivityScore → increasing churn  
-- ChargeRatio → increasing churn  
-- Fiber optic service → increasing churn  
+* ActivityScore → increasing churn
+* ChargeRatio → increasing churn
+* Fiber optic service → increasing churn
 
 ---
 
 ## 💡 Key Insights from Model
 
-- New customers are highly prone to churn  
-- High spending without long-term commitment increases risk  
-- Contract type plays a major role  
-- Engagement (ActivityScore) directly impacts retention  
+* New customers are highly prone to churn
+* High spending without long-term commitment increases risk
+* Contract type plays a major role
+* Engagement (ActivityScore) directly impacts retention
 
 ---
 
 ## 📌 Business Recommendations
 
 ### High Risk Customers
-- Immediate outreach  
-- Personalized retention offers  
-- Dedicated support  
+
+* Immediate outreach
+* Personalized retention offers
+* Dedicated support
 
 ### Medium Risk Customers
-- Improve onboarding  
-- Increase engagement  
+
+* Improve onboarding
+* Increase engagement
 
 ### Low Risk Customers
-- Loyalty programs  
-- Maintain satisfaction  
+
+* Loyalty programs
+* Maintain satisfaction
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python  
-- Pandas, NumPy  
-- XGBoost  
-- SHAP  
-- Matplotlib  
-- Streamlit  
+* Python
+* Pandas, NumPy
+* XGBoost
+* SHAP
+* Matplotlib
+* Streamlit
 
 ---
 
@@ -191,6 +183,7 @@ Clear business interpretation:
 
 ```bash
 streamlit run app.py
+```
 
 ---
 
@@ -206,9 +199,9 @@ This is not just a model.
 
 It is a complete decision-support system:
 
-- ✔ Prediction  
-- ✔ Explanation  
-- ✔ Business action  
+* ✔ Prediction
+* ✔ Explanation
+* ✔ Business action
 
 ---
 
@@ -222,9 +215,9 @@ M. Yeswanth Reddy
 
 This project shows:
 
-- End-to-end ML understanding  
-- Explainable AI usage  
-- Real business thinking  
+* End-to-end ML understanding
+* Explainable AI usage
+* Real business thinking
 
 👉 This project demonstrates how machine learning can move beyond prediction and support real business decisions through explainable insights.
 
@@ -236,8 +229,8 @@ This project highlights how machine learning can be used not only to predict out
 
 By combining:
 
-- Prediction  
-- Explainability  
-- Business logic  
+* Prediction
+* Explainability
+* Business logic
 
 👉 it provides a practical solution for reducing customer churn.
