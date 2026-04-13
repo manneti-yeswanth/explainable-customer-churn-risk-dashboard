@@ -218,3 +218,11 @@ Explainable AI usage
 Real business thinking
 
 👉 This project demonstrates how machine learning can move beyond prediction and support real business decisions through explainable insights.
+
+
+
+
+## ▶️ Run the Application
+
+```bash
+streamlit run app.py
