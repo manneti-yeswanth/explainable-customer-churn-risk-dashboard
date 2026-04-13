@@ -4,6 +4,8 @@ A complete end-to-end machine learning system to **predict customer churn risk a
 
 🔗 **Live Demo:** https://explainable-customer-churn-risk-dashboard-h8unhhkjcvpyjoib73me.streamlit.app/
 
+🚀 End-to-end ML system with Explainable AI (SHAP) + Real-time Streamlit Dashboard
+
 ---
 
 ## 🚀 Problem Statement
