@@ -1,25 +1,39 @@
 # 📊 Customer Churn Risk Intelligence Dashboard
 
-A complete end-to-end machine learning system to **predict customer churn risk and explain the reasons behind it**, helping businesses take proactive retention actions.
+A complete end-to-end machine learning system to **predict customer churn risk and explain the reasons behind it**, enabling businesses to take proactive retention actions.
 
 🔗 **Live Demo:** https://explainable-customer-churn-risk-dashboard-h8unhhkjcvpyjoib73me.streamlit.app/
 
-🚀 End-to-end ML system with Explainable AI (SHAP) + Real-time Streamlit Dashboard
+🚀 Built with XGBoost + SHAP + Streamlit for real-time prediction and explainable insights
 
 ---
 
-## 🚀 Problem Statement
+## 🎯 Problem Statement
 
 Customer churn is one of the biggest challenges for subscription-based businesses.
 
 Most systems only predict churn —
-👉 but don’t explain *why it happens*
+👉 but fail to explain *why it happens*
 
-This project solves both:
+This project addresses both:
 
 * ✔ Predict churn risk
 * ✔ Explain key drivers
-* ✔ Suggest business actions
+* ✔ Enable actionable business decisions
+
+---
+
+## 📂 Dataset
+
+The dataset contains customer demographic and behavioral data such as:
+
+* Tenure
+* Monthly charges
+* Contract type
+* Internet service
+* Payment method
+
+These features help identify patterns associated with customer churn.
 
 ---
 
@@ -31,9 +45,19 @@ This project solves both:
 
 ---
 
+## ⚙️ How It Works
+
+1. User inputs customer details via Streamlit UI
+2. Data is preprocessed and aligned with trained features
+3. XGBoost model predicts churn probability
+4. SHAP explains feature contributions
+5. System assigns risk level and suggests business action
+
+---
+
 ## 🧠 Solution Overview
 
-This project combines:
+This system combines:
 
 * **XGBoost Model** → High-performance prediction
 * **Feature Engineering** → Behavior-based insights
@@ -42,133 +66,95 @@ This project combines:
 
 ---
 
-## ⚙️ Machine Learning Pipeline
-
-### 🔹 Data Processing
-
-* Handled missing values
-* Encoded categorical variables
-* Feature alignment using saved columns
-
-### 🔹 Feature Engineering
-
-* **ChargeRatio = MonthlyCharges / TotalCharges**
-* **ActivityScore = tenure × MonthlyCharges**
-
-These features capture:
-
-* Customer engagement
-* Spending behavior
-
----
-
 ## 📊 Model Performance
 
-| Metric           | Value           |
-| ---------------- | --------------- |
-| Model            | XGBoost         |
-| ROC-AUC Score    | **0.82**        |
-| Accuracy         | Strong          |
-| Interpretability | High (via SHAP) |
+| Metric    | Value     |
+| --------- | --------- |
+| Accuracy  | **76.7%** |
+| ROC-AUC   | **0.81**  |
+| Precision | **0.56**  |
+| Recall    | **0.61**  |
+| F1 Score  | **0.58**  |
+
+📌 **Key Insight:**
+
+* Strong overall performance
+* Moderate recall for churn class → indicates scope for improvement
+* Model slightly biased toward non-churn customers
 
 ---
 
 ## 📸 Application Walkthrough
 
-### 🔹 1. User Input Interface
+### 🔹 User Input Interface
 
 ![Input UI](./input_ui.png)
 
-Users provide:
-
-* Tenure
-* Charges
-* Contract type
-* Services
-
 ---
 
-### 🔹 2. Risk Prediction Output
+### 🔹 Risk Prediction Output
 
 ![Risk Output](./risk_output.png)
 
-Example:
-
-* Risk Level: **High**
-* Probability: **0.70**
-* Risk Score: **70.3%**
-
-👉 Indicates strong likelihood of churn
+* Risk Level (Low / Medium / High)
+* Probability Score
+* Action Recommendation
 
 ---
 
-### 🔹 3. Business Decision Layer
-
-* High → Immediate retention needed
-* Medium → Proactive engagement
-* Low → Stable customer
-
----
-
-### 🔹 4. Feature Importance
+### 🔹 Feature Importance
 
 ![Feature Importance](./feature_importance.png)
 
 Top drivers:
 
-* Tenure (new customers at risk)
+* Tenure
+* Contract type
 * Payment method
-* Internet service type
 
 ---
 
-### 🔹 5. Explainable AI (SHAP)
+### 🔹 SHAP Explainability
 
 ![SHAP](./shap_explanation.png)
 
-SHAP shows:
-
-* Which features increase churn
-* Which features reduce churn
+Shows how each feature contributes to churn prediction.
 
 ---
 
-### 🔹 6. Key Drivers Summary
+### 🔹 Key Drivers Summary
 
 ![Key Drivers](./key_drivers.png)
 
-* ActivityScore → increasing churn
-* ChargeRatio → increasing churn
-* Fiber optic service → increasing churn
+Highlights most impactful churn factors.
 
 ---
 
 ## 💡 Key Insights from Model
 
-* New customers are highly prone to churn
-* High spending without long-term commitment increases risk
-* Contract type plays a major role
-* Engagement (ActivityScore) directly impacts retention
+* New customers are more likely to churn
+* High monthly charges increase churn risk
+* Contract type significantly impacts retention
+* Customer engagement strongly affects churn
 
 ---
 
 ## 📌 Business Recommendations
 
-### High Risk Customers
+### 🔴 High Risk Customers
 
 * Immediate outreach
 * Personalized retention offers
-* Dedicated support
 
-### Medium Risk Customers
+### 🟡 Medium Risk Customers
 
-* Improve onboarding
-* Increase engagement
+* Improve engagement
+* Offer incentives
 
-### Low Risk Customers
+### 🟢 Low Risk Customers
 
-* Loyalty programs
 * Maintain satisfaction
+* Loyalty programs
 
 ---
 
@@ -183,7 +169,7 @@ SHAP shows:
 
 ---
 
-## ▶️ Run the Application
+## ▶️ Run Locally
 
 ```bash
 streamlit run app.py
@@ -191,50 +177,36 @@ streamlit run app.py
 
 ---
 
-## 🔗 Live Demo
+## 🔥 What Makes This Project Strong
 
-👉 https://explainable-customer-churn-risk-dashboard-h8unhhkjcvpyjoib73me.streamlit.app/
+This is not just a prediction model —
+it is a **complete decision-support system**:
+
+* ✔ Prediction
+* ✔ Explainability
+* ✔ Business action
 
 ---
 
-## 🎯 What makes this project strong
+## 📈 Business Impact
 
-This is not just a model.
+* Enables early churn detection
+* Supports targeted retention strategies
+* Reduces revenue loss
 
-It is a complete decision-support system:
+---
 
-* ✔ Prediction
-* ✔ Explanation
-* ✔ Business action
+## 🔮 Future Improvements
+
+* Improve recall using advanced resampling
+* Hyperparameter tuning
+* Cloud deployment (AWS / GCP)
+* API integration
 
 ---
 
 ## 👨‍💻 Author
 
-M. Yeswanth Reddy
-
----
-
-## 🔥 Final Note
-
-This project shows:
-
-* End-to-end ML understanding
-* Explainable AI usage
-* Real business thinking
-
-👉 This project demonstrates how machine learning can move beyond prediction and support real business decisions through explainable insights.
-
----
-
-## 📌 Conclusion
-
-This project highlights how machine learning can be used not only to predict outcomes but also to support real-world decision-making.
-
-By combining:
-
-* Prediction
-* Explainability
-* Business logic
-
-👉 it provides a practical solution for reducing customer churn.
+**Yeshwanth Reddy M**
+🔗 GitHub: https://github.com/manneti-yeswanth
+🔗 LinkedIn: https://linkedin.com/in/your-link
