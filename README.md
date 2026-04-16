@@ -209,4 +209,4 @@ it is a **complete decision-support system**:
 
 **Yeshwanth Reddy M**
 🔗 GitHub: https://github.com/manneti-yeswanth
-🔗 LinkedIn: https://linkedin.com/in/your-link
+🔗 LinkedIn: www.linkedin.com/in/manneti-yeswanth-reddy-2758693b6
